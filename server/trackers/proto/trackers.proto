@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package trackers;
+
+option go_package = "github.com/wzslr321/server/trackers/proto";
+
+service Tracker {
+    rpc GetTrackers (GetTrackersRequest) returns (GetTrackersResponse) {}
+}
+
+message GetTrackersRequest {
+    string id = 1;
+}
+
+message GetTrackersResponse {
+    string trackers = 1;
+}

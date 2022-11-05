@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  trackers:
+    build:
+      context: server/trackers
+    ports:
+      - '50051:50051'
+    volumes:
+      - ./server/trackers:/server/trackers

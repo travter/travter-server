@@ -1,0 +1,10 @@
+run:
+  concurrency: 4
+  skip-dirs:
+    - src/external_libs
+  skip-dirs-use-default: false
+  skip-files:
+     - proto/trackers.pb.go
+  modules-download-mode: readonly
+  allow-parallel-runners: false
+  go: '1.19'

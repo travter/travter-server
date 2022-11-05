@@ -4,7 +4,7 @@
 // - protoc             v3.21.7
 // source: proto/trackers.proto
 
-package trackers
+package proto
 
 import (
 	context "context"
